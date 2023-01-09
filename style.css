@@ -1,11 +1,14 @@
 .screen-top{
     text-align: center;
     word-spacing: 20px;
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 150px;
+    margin-top: 25px;
 
     content:'';
 
 }
+
 .container1{
     margin: auto;
     display: flex;
@@ -47,6 +50,8 @@ body{
 }
 
 .hover-ani{
+    transition: all 1s;
+
 
 }
 h1{
@@ -61,23 +66,25 @@ h2{
     margin-top: 10px;
     text-align: center;
 }
-
-
 .main{
     border: 1px solid black;
     border-radius: 15px;
-    background-color:beige; /* beige */
-    background-image: linear-gradient(beige,#bec4c1);
-    color: black;
+    /* background-color:beige;  */
+    background-color:#121212;
+    color: white;
+    opacity: 87%;
+    /* background-image: linear-gradient(beige,#bec4c1); */
+    /* color: black; */
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
     padding: 100px;
+    overflow: hidden;
 }
 
 .main p{
@@ -86,9 +93,43 @@ h2{
 .hidden{
     opacity: 0;
     transition: all 1s;
-    transform: translate(-50%);
+    /* transform: translate(-50%); */
 }
 .show{
     opacity: 1;
-    transform: translate(0);
+    /* transform: translate(0); */
+}
+.embed_resume{
+    /* display: flex;
+    justify-content: center;
+    margin: 50px; */
+    /* display: inline-block; */
+	min-width: 60%;
+	min-height: 800px;
+    justify-content: center;
+    align-self: center;
+
+}
+.main2{
+    /* margin: 150px; */
+    margin-left: 150px;
+    margin-right: 150px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.icons{
+    color: white;
+    opacity: 90%;
+    font-size: 100px;
+    /* word-spacing: 100px; */
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+footer{
+    border: 100px solid black;
+    background-color: black;
+
 }
