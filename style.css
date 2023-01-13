@@ -129,6 +129,7 @@ html{
     justify-content: space-between;
     overflow: hidden;
 }
+
 .iconOverlay{
     position: absolute;
     font-size: 50px;
@@ -185,7 +186,17 @@ html{
     margin-right: auto;
     width: 50px;
     opacity: 0;
+    transition: 0.5s;
 }
+/* .liIcon{
+    transition: 0.5s;
+} */
+.icons ul li:hover .liIcon {
+    opacity: 0;
+    font-size: 500px;
+}
+
+
 /* .iconHover::after{
     content: '';
     height: 2px;
@@ -216,4 +227,8 @@ footer p{
 footer{
     background-color: #121212;
     padding: 80px 0;
+}
+
+@media screen and (max-width: 600px){
+    
 }
