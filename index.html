@@ -1,125 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kai Jie | Computing Science</title>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="app.js"></script>
-    <script
-      src="https://kit.fontawesome.com/61509a26de.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body id="body">
-    <div class="view">
-      <nav class="screen-top fixed-element">
-        <div class="container1">
-          <ul class="links">
-            <li>
-              <a
-                href="https://github.com/lkaijie"
-                class="link hover-ani"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </li>
-            <li><a href="#about" class="link hover-ani">About </a></li>
-            <li><a href="#resume" class="link hover-ani">Resumé </a></li>
-            <li><a href="contact.html" class="link hover-ani">Contact </a></li>
-            <li><a href="#skills" class="link hover-ani">Skills </a></li>
-            <!-- add project section -->
-            <li><a href="projects.html" class="link hover-ani">Projects </a></li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar(add appear when scroll up) -->
+    <header class = "head">
+        <!-- <h1>Header</h1> -->
+        <nav class="nav-main">
+            <ul class = "nav-bar">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="blog.html" class ="nav-link">Blog</a></li>
+                <li><a href="https://github.com/lkaijie" target="_blank" class="nav-link">Github</a></li>
+                <li><button id="lightModeButton" onclick="toggleDarkMode()">icon</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="typewriter" id = "intro">
+            <p>Yo, what is up Tsting.</p>
+            <h1>My name is Kaijie.</h1>
         </div>
-      </nav>
-      <div class="main">
-        <div class="hidden">
-          <section id="about">
-            <h1>Lee Kai Jie</h1>
-            <h2>About Me</h2>
-            <p>
-              Hello! I am Kai Jie, a software developer and B.Sc. Computer
-              Science candidate at the University of Alberta. My aim is to
-              deepen my understanding in the field of technology and
-              development. I enjoy coding and video games!
-            </p>
-            <p>
-              Video games in general has always facinated me and it is the field I am hoping to work in the most. Besides that, I also enjoy Front-end, Back-end development and also app development!
-            </p>
-            <p>
-              I am currently looking for a co-op/intern position for the summer of 2023
-              and am open to any opportunities. Please feel free to contact me
-              through my email (leekaijie0805@gmail.com).
-            </p>
-          </section>
-        </div>
-      </div>
-      <div class="main2">
-        <div class="hidden">
-          <section id="resume">
-            <h1>Resumé</h1>
-            <div class="embed_resume">
-              <center class="hidden">
-                <embed
-                  src="src/kj_resume.pdf"
-                  type="application/pdf"
-                  width="60%"
-                  height="800px"
-                />
-              </center>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div class="main">
-        <div class="hidden">
-          <section id="skills">
-            <h1>Skills</h1>
-            <div class="icons">
-              <ul class="ulIcon">
-                <li class="liIcon">
-                  <i class="fa-brands fa-java" title="JAVA"></i>
-                  <p class="iconHover">Java</p>
-                </li>
-                <li class="liIcon"><i class="fa-brands fa-js"></i>
-                  <p class="iconHover">Javascript</p>
-                </li>
-                <li class="liIcon"><i class="fa-brands fa-python"></i>
-                  <p class="iconHover">Python</p>
-                </li>
-                <li class="liIcon"><i class="fa-brands fa-html5"></i>
-                  <p class="iconHover">HTML</p>
-                </li>
-                <li class="liIcon"><i class="fa-brands fa-css3-alt"></i>
-                  <p class="iconHover">CSS</p>
-                </li>
-                <li class="liIcon"><i class="fa-solid fa-c"></i>
-                  <p class="iconHover">C</p>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </div>
+        <div class="intro"></div>
+        <div class="projects">
+            <!-- make it like dota2.com latest news -->
+            <div class="project-capsule">
+                <a href="" class="project-link">
+                    <img src="src/img/1.jpg" alt="" class="project-content">
+                </a>
+                <a href="" class="project-link">
+                    <img src="src/img/1.jpg" alt="" class="project-content">
+                </a>
+                <a href="" class="project-link">
+                    <img src="src/img/1.jpg" alt="" class="project-content">
+                </a>
 
-      <div id="foot">
-        <footer>
-          <h3><a href="mailto: leekaijie0805@gmail.com" class="link">leekaijie0805@gmail.com</a></h1>
-            <div class="footer">
-                <ul class="footer-links">
-                    <li><a href="https://github.com/lkaijie" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/kai-jie-lee-0b7010239/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/kai-jie-lee-0b7010239/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                </ul>
-              </div>
-              <div class="cpr">
-                <p>© 2023 Kai Jie Lee | Calgary AB</p>
-              </div>
-        </footer>
-      </div>
-    </div>
-  </body>
+
+
+                <p>test</p>
+                <!-- use a tags 
+                stats = Rendered size:	800 × 450 px
+                Rendered aspect ratio:	16∶9-->
+
+            </div>
+            <div class="project-capsule">
+                <p>test</p>
+
+                <p>test</p>
+                <p>test</p>
+                <p>test</p>
+            </div>
+
+        </div>
+        <div class="skils"></div>
+        <div class="contact"></div>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+    <script defer src="app.js">
+    </script>
+</body>
 </html>
