@@ -14,6 +14,9 @@
     ></script>
 </head>
 <body>
+
+    <!-- one time animation test -->
+    <img id="animated-image" class="fade-in" src="src/img/work_in_progress.jpg" alt="Animated Image">
     <!-- nav bar(add appear when scroll up) -->
     <header class = "head">
         <!-- <h1>Header</h1> -->
@@ -25,6 +28,10 @@
                     <li><a href="#projects-div" class="nav-link">Projects</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li><a href="blog.html" class ="nav-link">Blog</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <!-- skills navigate -->
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+
                     <li><a href="https://github.com/lkaijie" target="_blank" class="nav-link">Github</a></li>
                     <li><button id="lightModeButton" onclick="toggleDarkMode()">icon</button></li>
                     <!-- https://github.com/features/codespaces
@@ -80,28 +87,73 @@
                 </div>
             </div>
         </div>
-        <p>TESTING  </p>
+        <!-- <p>TESTING  </p> -->
         
-        <div class="skills">
+        <div class="skills" id="skills">
             <h1 id="projects">Skills</h1>
             <div class="skills-container">
+                <!-- make stagger animation? or wut -->
                 <ul class="skills-icon hidden">
-                    <li><i class="devicon-html5-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-javascript-plain colored"></i></li>
-                    <li><i class="devicon-python-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-cplusplus-plain colored"></i></li>
-                    <li><i class="devicon-c-plain colored"></i></li>
-                    <li><i class="devicon-java-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-mysql-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-mongodb-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-git-plain-wordmark colored"></i></li>
-                    <li><i class="devicon-visualstudio-plain-wordmark colored"></i></li>
-
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                      
+                        <span class="tooltiptext">HTML5</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                      
+                        <span class="tooltiptext">CSS3</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                      
+                        <span class="tooltiptext">JavaScript</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                      
+                        <span class="tooltiptext">Python</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                      
+                        <span class="tooltiptext">C</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />            
+                        <span class="tooltiptext">Java</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+                      
+                        <span class="tooltiptext">MySQL</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                      
+                        <span class="tooltiptext">MongoDB</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                      
+                        <span class="tooltiptext">Git</span></div></li>
+                    <li><div class="icon-container">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
+                      
+                        <span class="tooltiptext">Visual Studio</span></div></li>
                 </ul>
             </div>
         </div>
-        <div class="contact"></div>
+        <div class="contact">
+            <h1 id="projects">Contact</h1>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xaylqzjy" method="POST">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
     </main>
     <div id="foot">
         <footer>

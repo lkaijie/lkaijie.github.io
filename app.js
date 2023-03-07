@@ -1,3 +1,33 @@
+// nav bar appear on scroll up
+let prevScrollpos = window.pageYOffset;
+  window.addEventListener('scroll', function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      // Show the navigation bar
+      document.getElementById('nav-main').style.top = '0';
+    } else {
+      // Hide the navigation bar
+      document.getElementById('nav-main').style.top = '-50px';
+    }
+    prevScrollpos = currentScrollPos;
+  });
+
+
+
+
+// one time aniomation
+window.addEventListener('load', function() {
+  var element = document.getElementById('animated-image');
+  if (!element.classList.contains('fade-in')) {
+    element.classList.add('fade-in');
+  }
+});
+
+
+
+
+
+  
 // darkmode
   // Function to toggle dark mode on and off
   function toggleDarkMode() {
@@ -36,3 +66,18 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((e1) => observer.observe(e1));
+
+
+// show navbar on scroll up
+// let prevScrollpos = window.pageYOffset;
+// window.addEventListener('scroll', function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     // Show the navigation bar
+//     document.getElementById('nav-main').style.top = '0';
+//   } else {
+//     // Hide the navigation-main
+//     document.getElementById('nav-main').style.top = '-50px';
+//   }
+//   prevScrollpos = currentScrollPos;
+// });

@@ -192,6 +192,9 @@ body.light-mode .nav-bar a:hover{
     /* margin-bottom: 200px; */
 }
 
+#projects{
+    font-size: 50px;
+}
 
 .projects{
     /* width: 1350px; */
@@ -354,18 +357,65 @@ body.light-mode .nav-bar a:hover{
     font-size: 100px;
 }
 .skills-icon li{
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     /* border-radius: 50%;
     background-color: #333;
     box-shadow: 0px 0px 10px #000; */
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-container img{
+    width: 90px;
+    height: 90px;
+    /* border-radius: 50%; */
+    /* background-color: #333; */
+    /* box-shadow: 0px 0px 10px #000; */
+    transition: all 0.2s ease-in-out;
+}
+
+.icon-container span{
+    font-size: 18px;
+    /* color: #fff; */
+    /* color:aliceblue; */
+    color: #c9c5c5;
+    margin-top: 10px;
+
+}
+
+
+.skills-icon li:hover{
+    transform: scale(1.2); 
+    /* box-shadow: 0px 0px 20px #000; */
+    /* background-color: #555; */
+    color: #fff;
+    /* transition: all 0.5s ease-in-out; */
+}
+.tooltiptext{
+    /* position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+}
+
+
+
 
 .skills{
     width: 100%;
     height: 100%;
     margin: 0px;
+    margin-top: 100px;
     /* padding: 50px 50px 50px 50px; */
     display: flex;
     flex-direction: column;
@@ -374,7 +424,7 @@ body.light-mode .nav-bar a:hover{
 }
 .skills-container{
     width: 0px auto;
-    max-width: 1350px;
+    max-width: 1250px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -483,3 +533,20 @@ h3{
 
 
 /*  */
+/* animation one time load test */
+#animated-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slideUp 1s ease-in-out 1s forwards;
+    z-index: 99999;
+
+}
+
+@keyframes slideUp {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
+}
