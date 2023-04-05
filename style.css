@@ -606,27 +606,7 @@ h3{
     margin-bottom: 20px;
 }
 
-/* contact */
-/* 
-.contact{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 50px 50px 50px;
-}
-.form-control{
-    width: 0px auto;
-    max-width: 1250px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0px;
-    padding: 50px 50px 50px 50px;
-} */
+
 
 .contact{
     display: flex;
@@ -634,12 +614,26 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 50px 50px 50px 50px;
+    /* max-width: 800px; */
 }
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 50px 50px 50px; */
+    max-width: 500px;
+    width: 100%;
+}
+
+
 .contact-form {
     border: 1px solid rgb(80, 74, 74);
     border-radius: 4px;
     box-shadow: 0 0 10px 5px rgba(128, 0, 128, 0.5);
-    width: 500px;
+    /* width: 500px; */
+    width: 100%;
+    max-width: 500px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -744,3 +738,74 @@ h3{
     }
   }
   
+
+/* for mobile devices */
+/* what i want for it is maybe not show image or show image under/above text
+show 2/3 skills in a row or make it way smaller projects in a column */
+@media only screen and (max-width: 750px) {
+    .about-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 50px 50px 50px;
+        height: 100vh;
+        position: relative;
+    }
+
+    .nav-main{
+        display: none;
+    }
+
+    #introduction h1 {
+        font-size: 40px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        /* color: white; */
+        opacity: 90%;
+        max-lines: 2;
+    }
+
+    #introduction h2 {
+        font-size: 30px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        /* color: white; */
+        opacity: 90%;
+    }
+
+
+    .about-content a{
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px 20px 20px 0px;
+        background-color: #02b8a5;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 15px;
+        transition: transform 0.2s ease-in-out;
+        font-size: 30px;  
+        text-align: center; 
+    }
+
+    .project-capsule{
+        flex-direction: column;
+        overflow: hidden;
+
+    }
+
+    .icon-container img{
+        width: 40px;
+        height: 40px;
+        /* border-radius: 50%; */
+        /* background-color: #333; */
+        /* box-shadow: 0px 0px 10px #000; */
+        transition: all 0.2s ease-in-out;
+    }
+
+    #animated-image {
+        display: none;
+    }
+}
