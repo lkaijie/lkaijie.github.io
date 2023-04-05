@@ -81,3 +81,32 @@ hiddenElements.forEach((e1) => observer.observe(e1));
 //   }
 //   prevScrollpos = currentScrollPos;
 // });
+
+
+// umbralla rain
+const umbrella = document.querySelector('.umbrella');
+const rain = document.querySelector('.rain');
+
+// Set the radius in pixels
+const radius = 30;
+
+setInterval(() => {
+  const drop = document.createElement('div');
+  drop.classList.add('drop');
+
+  // Set the random x and y positions
+  const xPos = Math.random() * (radius * 2) - radius;
+  const yPos = -30;
+
+  // Set the drop's position relative to the umbrella
+  drop.style.top = umbrella.offsetTop + yPos + 'px';
+  drop.style.left = umbrella.offsetLeft + xPos + 'px';
+
+  // Append the raindrop to the rain container
+  rain.appendChild(drop);
+
+  // Remove the raindrop after 3 seconds
+  setTimeout(() => {
+    drop.remove();
+  }, 300);
+}, 100);

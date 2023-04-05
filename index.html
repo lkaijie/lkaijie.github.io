@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> <!-- for devicon -->
     <script
       src="https://kit.fontawesome.com/61509a26de.js"
@@ -14,7 +13,6 @@
     ></script>
 </head>
 <body>
-
     <!-- one time animation test -->
     <img id="animated-image" class="fade-in" src="src/img/work_in_progress.jpg" alt="Animated Image">
     <!-- nav bar(add appear when scroll up) -->
@@ -42,19 +40,28 @@
     </header>
     
     <main>
-        <div class="about-container">
-            <div class="about">
-                <!-- <h1>Hey, I am Kai Jie Lee</h1> -->
-                <div class="grid-container">
-                    <div class="item1"><h1>Hi! I am Kai Jie,</h1></div>
-                    <div class="item2">a software developer and B.Sc. Computer Science candidate at the University of Alberta. My aim is to deepen my understanding in the field of technology and development. </div>
-                    <div class="item3">imgs</div>  
-                </div>
+       <div class="about-container1">
+            <div class="about-content" id="introduction">
+                <h1>Hey it's Kai,</h1>
+                <h2>
+                    <p>Software Developer</p>
+                    <div class="umbrella-container">
+                        <div class="umbrella">&#9748;</div>
+                        <div class="rain"></div>
+                    </div>
+                </h2>
+                <a href="#contact" class="btn">Get in Touch</a>
             </div>
-            
-            <!-- <img aria-hidden="true" class="swoop dark-swoop " src="https://d33wubrfki0l68.cloudfront.net/2c499269a4a33fbbfca28010db8fdbb668a23c1c/beba6/images/landing-swoosh-dark.svg" alt=""> -->
+            <div class="about-content" id="logo">
+                <img src="src/img/invoker.jpg" alt="senjougahara">
+                <!-- <img src="src/img/logotest.png" alt="senjougahara"> -->
+            </div>
+            <!-- <a href="#projects-div" class="btn">See More</a> -->
+       </div>
+       <div class="bottom-seperator">
+            <a href="#projects-div" class="btn">See More ↓</a>
+       </div>
 
-        </div>
         <div id="projects-div">
             <div class="projects">
                 <h1 id="projects">Projects</h1>
@@ -80,23 +87,26 @@
                                 <br>
                                 scrapes job postings from Indeed and Monster
                             </div>
-                    </a>
-                    <a href="" class="project-link">
-                        <img src="src/img/1.jpg" alt="" class="project-content">
-                    </a>
+                        </a>
+                        <a href="" class="project-link">
+                            <img src="src/img/1.jpg" alt="" class="project-content">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- <p>TESTING  </p> -->
-        
-        <div class="skills" id="skills">
-            <h1 id="projects">Skills</h1>
-            <div class="skills-container">
-                <!-- make stagger animation? or wut -->
-                <ul class="skills-icon hidden">
-                    <li><div class="icon-container">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                      
+            <!-- <p>TESTING  </p> -->
+            
+            <div class="skills" id="skills">
+                <h1 id="projects">Skills</h1>
+                <div class="skills-container">
+                    <!-- make stagger animation? or wut -->
+                    <ul class="skills-icon hidden">
+                        <li><div class="icon-container">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                            <span class="tooltiptext">Python</span></div></li>
+                        <li><div class="icon-container">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            
                         <span class="tooltiptext">HTML5</span></div></li>
                     <li><div class="icon-container">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
@@ -107,12 +117,8 @@
                       
                         <span class="tooltiptext">JavaScript</span></div></li>
                     <li><div class="icon-container">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-                      
-                        <span class="tooltiptext">Python</span></div></li>
-                    <li><div class="icon-container">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
-                      
+                
                         <span class="tooltiptext">C</span></div></li>
                     <li><div class="icon-container">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />            
@@ -141,7 +147,7 @@
                 </ul>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <h1 id="projects">Contact</h1>
             <div class="contact-container">
                 <div class="contact-form">
