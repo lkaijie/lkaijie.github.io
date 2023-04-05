@@ -766,7 +766,11 @@ show 2/3 skills in a row or make it way smaller projects in a column */
         opacity: 90%;
         max-lines: 2;
     }
-
+    #about-logo{
+        /* display: none; */
+        width:auto;
+        height: 350px;
+    }
     #introduction h2 {
         font-size: 30px;
         margin: 0px 0px 0px 0px;
@@ -807,5 +811,10 @@ show 2/3 skills in a row or make it way smaller projects in a column */
 
     #animated-image {
         display: none;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 }
