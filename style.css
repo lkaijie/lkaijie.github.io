@@ -97,6 +97,7 @@ body.button.light-mode:hover{
     padding: 7px;
     color: #ffffffee;
     padding-top: 10px;
+    border-bottom: #004942 0.5px solid;
 }
 
 body.light-mode .nav-bar{
@@ -192,6 +193,73 @@ body.light-mode .nav-bar a:hover{
 
     font-size: 30px;
   }
+
+
+
+.about-container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 150px 50px 150px;
+    height: 100vh;
+    position: relative;
+}
+#introduction{
+    font-size: 50px;
+    /* white-space: ; */
+}
+#introduction h2{
+    font-size: 40px;
+    color: #02b8a5;
+    display: flex;
+    align-items: center;
+    /* margin-right: 100px; */
+}
+#introduction h2 p{
+    /* margin: 10px; */
+}
+#introduction h2 span{
+    /* font-size: 30px; */
+    margin: 10px;
+    transform: rotate(20deg);
+
+}
+
+.about-content a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px 20px 20px 0px;
+    background-color: #02b8a5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+    font-size: 30px;   
+}
+.bottom-seperator{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 50px;
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+.bottom-seperator a{
+    text-decoration: none;
+    font-size: 24px;
+    /* color: #fff; */
+    color: #02b8a5;
+    /* transition: transform 05s ease-in-out; */
+    font-style: italic;
+
+}
+.bottom-seperator a:hover{
+    /* color: #02b8a5; */
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.2);
+}
 
 
 
@@ -636,3 +704,39 @@ h3{
     from { transform: translateY(0); }
     to { transform: translateY(-100%); }
 }
+
+/* umbrella animation */
+.umbrella-container {
+    position: relative;
+    /* margin-top: 50px; */
+  }
+  
+  .umbrella {
+    font-size: 50px;
+    /* transform: rotate(-10deg); */
+  }
+  
+  .rain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .drop {
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: #2196F3;
+    animation: fall 1s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(200px);
+    }
+  }
+  
