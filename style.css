@@ -226,6 +226,10 @@ body.light-mode .nav-bar a:hover{
 
 }
 
+.about-content{
+    margin: 50px;
+}
+
 .about-content a{
     text-decoration: none;
     display: inline-block;
