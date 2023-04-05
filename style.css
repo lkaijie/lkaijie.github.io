@@ -717,7 +717,7 @@ h3{
   
   .umbrella {
     font-size: 50px;
-    /* transform: rotate(-10deg); */
+    transform: rotate(15deg);
   }
   
   .rain {
