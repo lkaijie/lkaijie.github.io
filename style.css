@@ -135,65 +135,16 @@ body.light-mode .nav-bar a:hover{
 
 
 /* about section */
-.about{
-    /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%); */
-    z-index: 9999;
-    background-image: url(src/img/bg-about.svg);
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    /* background-repeat: no-repeat; */
-    background-repeat: no-repeat repeat;
-
+/* #logo{
+    width: 450px;
+    height: 700px;
 }
-/* about section Grid */
-.item1{
-    grid-area: header;
-    white-space: nowrap;
-    /* background-color: #009688; */
-    /* background-color: #121212; */
-    /* background-color: #121212; */
-}
-.item2{
-    grid-area: menu;
-    /* background-color: #009688; */
-    /* background-color: #121212; */
-    /* background-color: #121212; */
-    min-width: 350px;
-}
-.item3{
-    grid-area: imgs;
-    /* background-color: #009688; */
-    /* background-color: #121212; */
-    /* background-color: #121212; */
-}
-.grid-container {
-    display: grid;
-    grid-template-areas:
-      'header header header imgs imgs'
-      'menu menu menu imgs imgs'
-      'menu menu menu imgs imgs';
-    gap: 10px;
-    /* background-color: #2196F3; */
-    padding: 10px;
-    
-    /* white-space: nowrap; */
-    /* margin: 50px 150px 50px 150px; */
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr
-    
-
-  
-  }
-  
-  .grid-container > div {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    text-align: center;
-    padding: 20px 100px 20px 100px;
-    /* margin: 50px 150px 50px 150px; */
-
-    font-size: 30px;
-  }
-
+#logo img{
+    width: auto; 
+    height: 100%; 
+    max-width: 100%; 
+    object-fit: cover
+} */
 
 
 .about-container1{
@@ -207,8 +158,12 @@ body.light-mode .nav-bar a:hover{
 }
 #introduction{
     font-size: 50px;
+    
     /* white-space: ; */
 }
+
+
+
 #introduction h2{
     font-size: 40px;
     color: #02b8a5;
@@ -229,6 +184,11 @@ body.light-mode .nav-bar a:hover{
 .about-content{
     margin: 50px;
 }
+.about-content h1{
+    max-lines: 2;
+}
+
+
 
 .about-content a{
     text-decoration: none;
@@ -322,8 +282,7 @@ body.light-mode .nav-bar a:hover{
     /* border-radius: 0.75rem; */
     border-width: 1px;
     border-color: pink;
-    box-shadow: rgb(132 59 206 / 15%) 0px 4px 24px;
-/* test */
+    box-shadow: rgb(132 59 206 / 15%) 0px -4px 24px; 
 }
 .project-link::after{
     content: "";
@@ -334,32 +293,44 @@ body.light-mode .nav-bar a:hover{
     pointer-events: none;
     background-image: linear-gradient(to bottom, rgba(255,255,255,0), black 90%);
     width: 100%;
-    height: 4em;
+    height: 7em;
 }
 .project-link:hover .project-content{
     /* transform: translateY(-100%); */
-    transform: scale(1.2);
-    opacity: 0.5;
+    transform: scale(1.1);
+    opacity: 0.3;    /* blur */
 }
+
 .project-link:hover .imgdesc{
     /* transform: translateY(0%); */
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -275%);
     /* opacity: 1; */
     transition-property: all;
-    transition-duration: .2s;
+    transition-duration: .5s;
     transition-timing-function: ease-in-out;
 }
+.project-link:hover .imgdesc div{
+    transform: translate(-50%, 20%);
+    transition-duration: 0.55s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-link:not(:hover) .imgdesc{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.project-link:not(:hover) .imgdesc div{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
 .project-link:hover .imgdesc-points{
-    /* transform: translateY(0%); */
-    transform: translate(-50%, -90%);
-    /* opacity: 1; */
     transition-property: all;
-    transition-duration: .2s;
+    transition-duration: .5s;
     transition-timing-function: ease-in-out;
 }
-
-
-
 
 .project-content{
     width: 100%;
@@ -382,16 +353,9 @@ body.light-mode .nav-bar a:hover{
     transition-timing-function: ease-in-out;
     object-fit: cover;
     object-position: center;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     /* filter: brightness(0.5); */
 }
-/* .project-content:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 0px 20px #000;
-    transition-property: all;
-    transition-duration: .2s;
-    transition-timing-function: ease-in-out;
-} */
 
 .image-container{
     position: relative;
@@ -400,6 +364,7 @@ body.light-mode .nav-bar a:hover{
     position: absolute;
     /* word-wrap: break-word; */
     color: white;
+    /* color: #CCCCCC; */
     font-size: 40px;
     width: 100%;
     text-align: center;
@@ -409,6 +374,7 @@ body.light-mode .nav-bar a:hover{
     transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
+    z-index: 2;
 }
 
 .imgdesc-points{
@@ -416,7 +382,7 @@ body.light-mode .nav-bar a:hover{
     /* word-wrap: break-word; */
     color: gray;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     text-align: center;
     top: 85%;
     left: 50%;
@@ -424,6 +390,9 @@ body.light-mode .nav-bar a:hover{
     transition-property: all;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
+    text-align: left;
+    margin-left: 4px;
+    margin-right: 1px;
 }
 
 
@@ -441,7 +410,7 @@ body.light-mode .nav-bar a:hover{
     font-size: 100px;
 }
 .skills-icon li{
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
     /* border-radius: 50%;
     background-color: #333;
@@ -712,7 +681,19 @@ h3{
   .umbrella {
     font-size: 50px;
     transform: rotate(15deg);
+    cursor: pointer;
+    z-index: 99999;
   }
+  .umbrella:hover {
+    /* transform: rotate(15deg) scale(1.1); */
+
+  }
+
+
+  /* .umbrella:hover {
+    c
+  } */
+
   
   .rain {
     position: absolute;
@@ -749,11 +730,15 @@ show 2/3 skills in a row or make it way smaller projects in a column */
         justify-content: center;
         align-items: center;
         margin: 0px 50px 50px 50px;
-        height: 100vh;
+        height: auto;
         position: relative;
     }
 
     .nav-main{
+        display: none;
+    }
+
+    .bottom-seperator{
         display: none;
     }
 
@@ -769,7 +754,12 @@ show 2/3 skills in a row or make it way smaller projects in a column */
     #about-logo{
         /* display: none; */
         width:auto;
-        height: 200px;
+        height: auto;
+        /* box-shadow: 0 0 8px 8px white inset; */
+        /* box-shadow: 0 0 10px 50px rgba(128, 0, 128, 0.5); */
+
+
+
     }
     #introduction h2 {
         font-size: 30px;
@@ -783,8 +773,10 @@ show 2/3 skills in a row or make it way smaller projects in a column */
 
     .about-content a{
         text-decoration: none;
-        display: inline-block;
-        margin: 20px 20px 20px 0px;
+        /* display: inline-block; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: #02b8a5;
         color: #fff;
         padding: 10px 20px;
