@@ -31,7 +31,22 @@
                     <li><a href="#skills" class="nav-link">Skills</a></li>
 
                     <li><a href="https://github.com/lkaijie" target="_blank" class="nav-link">Github</a></li>
-                    <li><button id="lightModeButton" onclick="toggleDarkMode()">icon</button></li>
+                    <li><button id="lightModeButton" onclick="toggleDarkMode(); playAudio()">Click me! UwU</button></li>
+                    <audio id="myAudio" src="/src/kaiki theme.mp3"></audio>
+                    <script>
+                        var audio = document.getElementById("myAudio");
+                        var isPlaying = false;
+                        function playAudio() {
+                            if (isPlaying) {
+                                audio.pause();
+                                isPlaying = false;
+                            } else {
+                                audio.play();
+                                audio.volume = 0.1;
+                                isPlaying = true;
+                            }
+                        }
+                    </script>
                     <!-- https://github.com/features/codespaces
                     implement the nav bar underline feature(higlight page u are at with udnerline) -->
                 </ul>

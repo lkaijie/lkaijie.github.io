@@ -18,7 +18,7 @@ body{
 }
 body.light-mode{
     color: #2e302f;
-    background-color:azure;
+    background-color:rgb(180, 182, 182);
 }
 
 main{
