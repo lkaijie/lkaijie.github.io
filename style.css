@@ -152,7 +152,7 @@ body.light-mode .nav-bar a:hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 50px 150px 50px 150px;
+    /* margin: 50px 150px 50px 150px; */
     height: 100vh;
     position: relative;
 }
@@ -183,11 +183,18 @@ body.light-mode .nav-bar a:hover{
 
 .about-content{
     margin: 50px;
+    /* height: 50vh;
+    width: 100vh; */
 }
 .about-content h1{
     max-lines: 2;
 }
 
+#about-logo{
+    /* display: none; */
+    max-width: 60vh; 
+    max-height: 100vh;
+}
 
 
 .about-content a{
@@ -743,7 +750,7 @@ show 2/3 skills in a row or make it way smaller projects in a column */
     }
 
     #introduction h1 {
-        font-size: 40px;
+        font-size: 70px;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
         text-align: center;
@@ -753,8 +760,8 @@ show 2/3 skills in a row or make it way smaller projects in a column */
     }
     #about-logo{
         /* display: none; */
-        width:auto;
-        height: auto;
+        max-width:40vh;
+        max-height: 50vh;
         /* box-shadow: 0 0 8px 8px white inset; */
         /* box-shadow: 0 0 10px 50px rgba(128, 0, 128, 0.5); */
 
@@ -768,6 +775,10 @@ show 2/3 skills in a row or make it way smaller projects in a column */
         text-align: center;
         /* color: white; */
         opacity: 90%;
+    }
+
+    .about-content{
+        margin: 0px;
     }
 
 
