@@ -182,7 +182,8 @@ body.light-mode .nav-bar a:hover{
 }
 
 .about-content{
-    margin: 50px;
+    /* margin: 50px; */
+    margin-left: 50px;
     /* height: 50vh;
     width: 100vh; */
 }
@@ -190,14 +191,20 @@ body.light-mode .nav-bar a:hover{
     max-lines: 2;
 }
 
-#about-logo{
-    /* display: none; */
+#logo{
     max-width: 60vh; 
     max-height: 100vh;
+    overflow: hidden;
+
+}
+#about-logo{
+    max-width: 60vh; 
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 
-.about-content a{
+.about-content .btn{
     text-decoration: none;
     display: inline-block;
     margin: 20px 20px 20px 0px;
@@ -290,6 +297,7 @@ body.light-mode .nav-bar a:hover{
     border-width: 1px;
     border-color: pink;
     box-shadow: rgb(132 59 206 / 15%) 0px -4px 24px; 
+    opacity: 0.95;
 }
 .project-link::after{
     content: "";
@@ -682,6 +690,7 @@ h3{
 /* umbrella animation */
 .umbrella-container {
     position: relative;
+    text-decoration: none;
     /* margin-top: 50px; */
   }
   
@@ -782,7 +791,7 @@ show 2/3 skills in a row or make it way smaller projects in a column */
     }
 
 
-    .about-content a{
+    .about-content .btn{
         text-decoration: none;
         /* display: inline-block; */
         display: flex;
