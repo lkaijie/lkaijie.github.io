@@ -282,7 +282,7 @@ body.light-mode .nav-bar a:hover{
     margin-bottom: 100px;
     margin-top: 100px;
 }
-
+/* possibly change? or keep it like this is fine. */
 .project-link{
     width: 400px;
     /* width: 100%; */
@@ -318,7 +318,9 @@ body.light-mode .nav-bar a:hover{
 
 .project-link:hover .imgdesc{
     /* transform: translateY(0%); */
-    transform: translate(-50%, -275%);
+    transform: translate(-50%, calc(-100% - var(--offset, 85px)));
+    /* transform: translate(-50%, -275%); */
+
     /* opacity: 1; */
     transition-property: all;
     transition-duration: .5s;
