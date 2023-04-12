@@ -1,0 +1,144 @@
+:root{
+    font-size: 20px;
+    box-sizing: border-box;
+    --primary-color: #ffffffee;
+    --secondary-color: #000000ee;
+}
+@font-face {
+    font-family: "radiance-semibold";
+    src: url("/src/fonts/radiance-semibold.woff") format('woff');
+    /* add / at the start means it is in root, damn this cucked me */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+body{
+    margin-top: 100px;
+    color: var(--primary-color);
+    /* font-size: 1.6rem; */
+    background-color: hsl(250, 24%, 9%);
+    font-family: radiance-semibold;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav bar(copy paste) */
+.nav-main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    /* background-color: rgb(0, 2, 18); */
+    background-color: wheat;
+    /* font-family: radiance-semibold, sans-serif; */
+
+    /* transition: transform 0.2s ease-in-out; */
+}
+#nav-main{
+    transition: top 0.2s ease-in-out;
+
+}
+
+/* nav bar */
+.nav-bar{
+    display: flex;
+    /* position: fixed; */
+    /* border: 1px solid #ffffffee; */
+    /* background-color: inherit;  its not working why!?*/
+    /* background-color: #121212; */
+    background-color: rgb(0, 2, 18);
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0, 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 7px;
+    color: #ffffffee;
+    padding-top: 10px;
+    border-bottom: #004942 0.5px solid;
+}
+
+body.light-mode .nav-bar{
+    /* background-color: #121212; */
+    background-color: #ffffffee;
+}
+.nav-main{
+    /* margin-top: 10px; */
+}
+.nav-bar li{
+    padding: 0px 10px;
+}
+.nav-bar a{
+    /* text-decoration: underline dotted; */
+    text-decoration: none;
+    display: inline-block;
+    color:inherit;
+    /* padding: 10px 20px; */
+    font-size: 20px;
+    position: relative;
+    color: #948e8eee;
+    transition: transform 0.2s ease-in-out;
+}
+.nav-bar a:hover{
+    /* background-color: #009688; */
+    color: white;
+    cursor: pointer;
+    transform: scale(1.2);
+    /* font-size: 20px; */
+    /* position: inherit; */
+}
+body.light-mode .nav-bar a:hover{
+    color: black; 
+}

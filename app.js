@@ -23,7 +23,11 @@ window.addEventListener('load', function() {
   }
 });
 
+const startimg = document.querySelector('#animated-image1');
+startimg.addEventListener('animationend', function() {
+  startimg.style.display = 'none';
 
+});
 
 
 

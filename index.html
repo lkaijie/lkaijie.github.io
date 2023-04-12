@@ -14,24 +14,26 @@
 </head>
 <body>
     <!-- one time animation test -->
-    <img id="animated-image" class="fade-in" src="src/img/work_in_progress.jpg" alt="Animated Image">
+    <!-- <img id="animated-image" class="fade-in" src="src/img/work_in_progress.jpg" alt="Animated Image"> -->
+    <img id="animated-image1" class="fade-in" src="src/img/rain.gif" alt="Animated Image">
+
     <!-- nav bar(add appear when scroll up) -->
     <header class = "head">
         <!-- <h1>Header</h1> -->
         <div class="navmain">
             <nav class="nav-main" id="nav-main">
                 <ul class = "nav-bar">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
+                    <!-- <li><a href="index.html" class="nav-link">Home</a></li> -->
+                    <!-- <li><a href="#about" class="nav-link">About</a></li> -->
                     <li><a href="#projects-div" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="blog.html" class ="nav-link">Blog</a></li>
-                    <li><a href="resume.html" class="nav-link">Resume</a></li>
-                    <!-- skills navigate -->
                     <li><a href="#skills" class="nav-link">Skills</a></li>
-
-                    <li><a href="https://github.com/lkaijie" target="_blank" class="nav-link">Github</a></li>
                     <li><button id="lightModeButton" onclick="toggleDarkMode(); playAudio()">whats this</button></li>
+                    <li><a href="blog.html" class ="nav-link new-tab">Blog</a></li>
+                    <li><a href="resume.html" class="nav-link new-tab">Resume</a></li>
+                    <!-- skills navigate -->
+
+                    <li><a href="https://github.com/lkaijie" target="_blank" class="nav-link new-tab">Github</a></li>
                     <audio id="myAudio" src="/src/kaiki theme.mp3"></audio>
                     <script>
                         var audio = document.getElementById("myAudio");
@@ -83,7 +85,9 @@
             <a href="#projects-div" class="btn">See More ↓</a>
        </div>
 
-        <div id="projects-div">
+
+       
+       <div id="projects-div">
             <div class="projects">
                 <h1 id="projects">Projects</h1>
                 <!-- make it like dota2.com latest news -->
@@ -128,6 +132,7 @@
             <!-- <p>TESTING  </p> -->
             
             <div class="skills" id="skills">
+                <div class="seperator"></div>
                 <h1 id="projects">Skills</h1>
                 <div class="skills-container">
                     <!-- make stagger animation? or wut -->
@@ -192,6 +197,7 @@
             </div>
         </div>
     </main>
+    <div class="seperator1"></div>
     <div id="foot">
         <footer>
           <h3><a href="mailto: leekaijie0805@gmail.com" class="link">leekaijie0805@gmail.com</a></h3>
@@ -204,7 +210,7 @@
               </div>
               <div class="cpr">
                   <p>© 2023 Kai Jie Lee | Calgary AB</p>
-                  <p id="last-edit">Last edited on 2023-04-07</p>
+                  <p id="last-edit">Last edited on 2023-04-12</p>
               </div>
         </footer>
       </div>
