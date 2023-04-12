@@ -13,6 +13,7 @@ body{
     color: #ffffffee;
     /* background-color:  #121212; */
     background-color: rgb(0, 2, 18);
+    /* background-color: black; */
     /* background-color: hsl(250, 24%, 9%); */
     margin: 0%;
     /* min-width: 500px; */
@@ -268,7 +269,7 @@ body.light-mode .nav-bar a:hover{
     /* margin-bottom: 200px; */
 }
 .seperator{
-    background: linear-gradient(to bottom right, #000 50%, hsl(250, 24%, 9%) 50%);
+    background: linear-gradient(to bottom right, rgb(0, 2, 18) 50%, hsl(250, 24%, 9%) 50%);
     height: 10vh;
     width: 100%;
 }
@@ -570,11 +571,6 @@ body.light-mode .nav-bar a:hover{
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
-}
-
-.about-container{
-    /* position: relative; */
-    background: #009688;
 }
 
 
