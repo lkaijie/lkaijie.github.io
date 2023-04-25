@@ -741,6 +741,11 @@ h3{
 
 }
 
+#animated-image1{
+    display: none;
+}
+
+
 @keyframes dissapear {
     from { opacity: 0; }
     to { 
