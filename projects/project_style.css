@@ -29,9 +29,27 @@ h1{
 
 
 
+.topic-container{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    /* border-radius: 100px; */
+}
+img{
+    border-radius: 10px;
+}
 
-
-
+hr.dashed {
+    /* border-top: 3px dashed #bbb; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 
