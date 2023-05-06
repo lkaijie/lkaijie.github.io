@@ -147,9 +147,7 @@ body.light-mode .nav-bar{
     /* background-color: #121212; */
     background-color: #ffffffee;
 }
-.nav-main{
-    /* margin-top: 10px; */
-}
+
 .nav-bar li{
     padding: 0px 10px;
 }
@@ -201,9 +199,7 @@ body.light-mode .nav-bar a:hover{
     align-items: center;
     /* margin-right: 100px; */
 }
-#introduction h2 p{
-    /* margin: 10px; */
-}
+
 #introduction h2 span{
     /* font-size: 30px; */
     margin: 10px;
@@ -272,9 +268,7 @@ body.light-mode .nav-bar a:hover{
 
 
 /* project section */
-#projects-div{
-    /* margin-bottom: 200px; */
-}
+
 .seperator{
     /* background: linear-gradient(to bottom right, rgb(0, 2, 18) 50%, hsl(250, 24%, 9%) 50%); */
     /* background: linear-gradient(to bottom right, url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg) 50%, hsl(250, 24%, 9%) 50%); */
@@ -510,13 +504,6 @@ body.light-mode .nav-bar a:hover{
     /* background-color: #555; */
     color: #fff;
     /* transition: all 0.5s ease-in-out; */
-}
-.tooltiptext{
-    /* position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    
 }
 
 
@@ -786,10 +773,7 @@ h3{
     cursor: pointer;
     z-index: 99999;
   }
-  .umbrella:hover {
-    /* transform: rotate(15deg) scale(1.1); */
-
-  }
+ 
 
 
   .rain {
