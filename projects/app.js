@@ -10,20 +10,20 @@ var yticon = document.getElementById('youtube-icon');
 vscode.addEventListener('click', function(event) {
     event.preventDefault(); // prevent the default behavior of the button click event
     github1s.classList.toggle('hidden');
-    github.classList.add('hidden');
+    // github.classList.add('hidden');
     youtube.classList.add('hidden');
 });
 
-invert.addEventListener('click', function(event) {
-    event.preventDefault(); // prevent the default behavior of the button click event
-    github.classList.toggle('hidden');
-    github1s.classList.add('hidden');
-    youtube.classList.add('hidden');
-});
+// invert.addEventListener('click', function(event) {
+//     event.preventDefault(); // prevent the default behavior of the button click event
+//     github.classList.toggle('hidden');
+//     github1s.classList.add('hidden');
+//     youtube.classList.add('hidden');
+// });
 
 yticon.addEventListener('click', function(event) {
     event.preventDefault(); // prevent the default behavior of the button click event
     youtube.classList.toggle('hidden');
-    github.classList.add('hidden');
+    // github.classList.add('hidden');
     github1s.classList.add('hidden');
 });

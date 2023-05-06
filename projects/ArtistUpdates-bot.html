@@ -7,7 +7,8 @@
     <!-- change title -->
     <title>Kai Jie | ArtistUpdates-Bot</title>
     <link rel="stylesheet" href="project_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous" defer="defer"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script defer src="app.js"></script>
 
@@ -32,21 +33,33 @@
                     <li>
                         <a href="" class="icon-link">
                             <div class="img-wrapper" id="vsicon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+                                <div class="icon-container">
+                                    <span class="tooltiptext">Preview</span>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+                                </div>
                             </div>
                         </a>
                     </li>                    
                     <li>
-                        <a href="" class="icon-link">
+                        <!-- TODO: change to fontawesome so color can change on highlight, think if want to change color or increase size? -->
+                        <a href="https://github.com/CMPUT301W23T14/QRHunter-App" class="icon-link">
                             <div class="img-wrapper">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" id="inver"/>
+                                <div class="icon-container">
+                                    <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" id="inver"/> -->
+                                    <span class="tooltiptext">Repository</span>
+                                    <i class="fa-brands fa-github"></i>
+                                    <i class="fa-solid fa-arrow-up-right-from-square link-icon" id="hlink"></i>
+                                </div>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="" class="icon-link">
                             <div class="img-wrapper">
-                                <i class="fa fa-youtube-play" style="color:#FF0000" id="youtube-icon"></i>
+                                <div class="icon-container">
+                                    <span class="tooltiptext">Demo</span>
+                                    <i class="fa fa-youtube-play" style="color:#FF0000" id="youtube-icon"></i>
+                                </div>
                             </div>
                         </a>
                     </li>
@@ -54,16 +67,16 @@
             </div>
         </section>
         <iframe src="https://github1s.com/lkaijie/ArtistUpdates-bot" frameborder="0" class="iframe hidden" id="github1s"></iframe>
-        <iframe src="https://github.com/lkaijie/ArtistUpdates-bot" frameborder="0" class="iframe hidden" id="github"></iframe>
+        <!-- <iframe src="https://github.com/lkaijie/ArtistUpdates-bot" frameborder="0" class="iframe hidden" id="github"></iframe> -->
         <!-- <iframe src="https://www.youtube.com/watch?v=A48bcNyi1VM" frameborder="0" class="iframe hidden" id="youtube"></iframe> -->
         <section>
             <div class="description-container">
                 <h1 class="topic-title">About</h1>
                 <hr class="dashed">
                 <p class="description">
-                    For some reason the main platform for artists I like is Twitter, and frankly, I really dislike the way Twitter does their home Feed.
-                    Your home feed is often plagued with retweets and tweets from people you don't follow, and it's annoying because I just want to see the tweets from the artists I follow.
-                    I created this discord bot to notify me whenever an artist I follow tweets, and it also allows me to view their tweets in a clean and simple way.
+                    The main platform for artists nowadays seems to be Twitter, and frankly, I really dislike the way they do their home Feed.
+                    The home feed is often plagued with retweets and tweets from people you don't follow, and it's annoying because I am only interested in the tweets from the artists I follow.
+                    This discord bot was created to notify me whenever an artist I follow uploads media, it also allows me to view their tweets in a clean and simple way.
                     This is my first personal project where I actually followed proper conventions, making use of .envs, workflows, proper file structure, proper commit messages and more. 
                 </p>
                 <br>
