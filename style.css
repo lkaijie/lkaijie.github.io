@@ -227,6 +227,9 @@ body.light-mode .nav-bar a:hover{
     max-width: 60vh; 
     max-height: 100vh;
     overflow: hidden;
+    border-radius: 50%;
+    
+
 }
 
 
