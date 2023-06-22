@@ -17,21 +17,23 @@ export default function Navbar() {
           <div className="nav-content flex justify-center items-end align-bottom">
             <a href="#about" className="nav-link">
               About
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1.5px] bg-sky-600 mt-[1px]"></span>
             </a>
             <a href="#projects" className="nav-link">
               Projects
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1.5px] bg-sky-600 mt-[1px]"></span>
             </a>
             <a href="#contact" className="nav-link">
               Contact
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1.5px] bg-sky-600 mt-[1px]"></span>
             </a>
             <a
               href="assets/resume.pdf"
-              // className="nav-link group mx-2 md:mx-2 font-bold flex no-underline hover:underline transition duration-300 ease-in-out"
               className="group text-sky-600 transition duration-300 ml-4"
             >
               📋 View Resume
               <FontAwesomeIcon icon={faArrowRight} className="ml-1 mt-[2px]" />
-              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1.5px] bg-sky-600 mt-[1px]"></span>
+              <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1.5px] bg-sky-600 mt-[0.5px]"></span>
             </a>
           </div>
         </div>

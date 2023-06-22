@@ -8,7 +8,7 @@
     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
   } */
   .nav-link{
-    @apply mx-2 hidden md:flex underline hover:text-blue-400 hover:no-underline;
+    @apply mx-2 hidden md:block underline hover:text-blue-400 hover:no-underline;
   }
   .nav-link-active{
     @apply mx-2 hidden md:flex underline hover:text-blue-400 hover:no-underline;
@@ -19,4 +19,27 @@
   .h-90viewport{
     height: 90vh;
   }
+  .text-important{
+    @apply font-semibold text-gray-500;
+  }
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'SFProDisplayBold';
+  src: url(./assets/fonts/SF-Pro-Display-Bold.ttf);
+}
+@font-face {
+  font-family: 'SFProDisplayRegular';
+  src: url(./assets/fonts/SF-Pro-Display-Regular.ttf);
+}
+@font-face {
+  font-family: 'SFProDisplayLight';
+  src: url(./assets/fonts/SF-Pro-Display-Light.ttf);
+}
+
+@font-face {
+  font-family: 'SFProTextSemiBold';
+  src: url(./assets/fonts/);
 }
