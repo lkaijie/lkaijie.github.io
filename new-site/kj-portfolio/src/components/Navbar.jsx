@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import resume from "../assets/resume.pdf";
 
 export default function Navbar() {
   return (
@@ -28,7 +29,7 @@ export default function Navbar() {
               <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1.5px] bg-sky-600 mt-[1px]"></span>
             </a>
             <a
-              href="assets/resume.pdf"
+              href={resume}
               className="group text-sky-600 transition duration-300 ml-4"
             >
               📋 View Resume
