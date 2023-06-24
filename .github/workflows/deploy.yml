@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - sitev3
 
 jobs:
   build:
@@ -35,7 +35,9 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/sitev3'
+
 
     steps:
       - name: Download artifact
