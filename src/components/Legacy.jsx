@@ -40,14 +40,14 @@ export default function Legacy() {
         <img src={timeMachine} alt="time-machine" className="h-6" />
         <div className="absolute bg-gray-800 text-white text-xs px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 bottom-full transform translate-y-[-8px] transition-opacity duration-300">
           <a
-            href="../../legacy-site1/index.html"
+            href="https://lkaijie.github.io/portfolio-v1/"
             target="_blank"
             className="mx-2 "
           >
             Site V1
           </a>
           <a
-            href="../../legacy-site/index.html"
+            href="https://lkaijie.github.io/portfolio-v2/"
             target="_blank"
             className="mx-2"
           >
