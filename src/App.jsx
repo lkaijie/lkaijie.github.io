@@ -6,6 +6,8 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills_Section/Skills";
 import Contact from "./components/Contact";
+import project_json from "./components/projects.json";
+// import project_json from "./components/projects.json" assert { type: "json" };
 // import project_json from "./components/projects.json" assert { type: "json" };
 
 function App() {
@@ -16,7 +18,11 @@ function App() {
   // Gets projects from Json file
   useEffect(() => {
     try {
-      fetch("src/components/projects.json")
+      // fetch("src/components/projects.json")
+      fetch(
+        "https://raw.githubusercontent.com/lkaijie/lkaijie.github.io/sitev3_test/src/components/projects.json"
+      )
+        // fetch({ project_json })
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
