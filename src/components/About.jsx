@@ -74,7 +74,7 @@ export default function About() {
           </div>
           <div className="about-img w-2/4 ml-5">
             {/* <img src={about_img} alt="profile" /> */}
-            <img src="src/assets/about_img.svg" alt="profile" />
+            <img src={about_img} alt="profile" />
             {/* both work */}
           </div>
         </div>
