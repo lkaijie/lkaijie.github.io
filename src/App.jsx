@@ -16,7 +16,7 @@ function App() {
   // Gets projects from Json file
   useEffect(() => {
     try {
-      fetch("/src/components/projects.json")
+      fetch("./src/components/projects.json")
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);

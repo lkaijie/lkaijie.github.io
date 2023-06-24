@@ -100,6 +100,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  zoom: 1.5;
+}
+
 @keyframes wave-animation {
   0% { transform: rotate( 0.0deg) }
   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
