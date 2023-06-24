@@ -1,0 +1,269 @@
+:root{
+    font-size: 20px;
+    box-sizing: border-box;
+    --primary-color: #ffffffee;
+    --secondary-color: #000000ee;
+}
+@font-face {
+    font-family: "radiance-semibold";
+    src: url("/src/fonts/radiance-semibold.woff") format('woff');
+    /* add / at the start means it is in root, damn this cucked me */
+}
+@font-face {
+    font-family: "Mona-Sans";
+    src: url("/src/fonts/Mona-Sans.woff") format('woff');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+body{
+    /* margin-top: 90px; */
+    color: var(--primary-color);
+    /* font-size: 1.6rem; */
+    /* background-color: hsl(250, 24%, 9%); */
+    background-color: hsl(250, 24%, 9%);
+    font-family: radiance-semibold;
+    /* font-family: Mona Sans; */
+    background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg);
+}
+
+h1{
+    font-size: 50px;
+}
+p{
+    /* font-family: ; */
+    font-family: 'Mona-Sans';
+    font-weight: 450;
+}
+li{
+    font-family: 'Mona-Sans';
+    font-weight: 350;
+}
+
+.topic-container{
+    display: flex;
+    flex-direction: row;
+    /* margin: 30px; */
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 50vh; */
+    /* font-size: 80px; */
+}
+
+/* .nav-main{
+    font-size: 60px;
+    margin: 10px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-main i{
+    transform: scaleX(1.2);
+    margin-right: auto;
+} */
+
+.nav-main {
+    font-size: 60px;
+    margin: 10px 10px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-main i {
+    transform: scaleX(1.2);
+  }
+  .no-underline{
+    color: aliceblue;
+  }
+
+#test{
+    /* display: ; */
+    visibility: hidden;
+} 
+
+
+.features h3{
+    text-decoration: underline;
+}
+
+
+
+
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    box-shadow: 0 4px 64px 0 #843BCE33; 
+}
+.img-container img{
+    border-radius: 10px;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover; /* this one cuts off the edges when shrinks*/
+    overflow: hidden;
+}
+
+hr.dashed {
+    /* border-top: 3px dashed #bbb; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#inver{
+    filter: invert(100%);
+}
+
+.icon-list li{
+    list-style: none;
+    margin: 50px;
+}
+.icon-list{
+    font-size: 60px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-link{
+    color: #ffffffee;
+    text-decoration: none;
+    /* display: flex; */
+}
+
+.tooltiptext{
+    /* position: absolute; */
+    font-size: 20px;
+    margin-right: 8px;
+    /* bottom: 0px; */
+    /* left: 0px; */
+    /* right: 0px; */
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* position: relative; */
+    margin: 10px;
+    font-size: 30px;
+}
+
+.img-wrapper img{
+    height: 1em;
+}
+.img-wrapper{
+    /* box-shadow: 0 4px 64px 0 #843BCE33; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    
+}
+
+.img-wrapper:hover{
+    /* transform: scale(1.2);
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out; */
+    color: aqua;
+}
+
+/* .img-wrapper:not(:hover){
+    transform: scale(1);
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+} */
+
+.fa-youtube-play{
+    font-size: 1em;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px;
+}
+
+#hlink{
+    /* color: #ffffffee; */
+    /* text-decoration: none; */
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+section{
+    margin: 15px;
+    margin-top: 30px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+    /* box-shadow: 0 4px 64px 0 #843BCE33; */
+}
+
+
+.topic-title{
+    /* font-size: 50px; */
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+
+.iframe{
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+    margin-left: 30px;
+    border: white;
+    border-radius: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.seperator{
+    /* background: linear-gradient(to bottom right, rgb(0, 2, 18) 50%, hsl(250, 24%, 9%) 50%); */
+    /* background: linear-gradient(to bottom right, url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/outlanders/patch-notes/bg_repeater.jpg) 50%, hsl(250, 24%, 9%) 50%); */
+    background: linear-gradient(to bottom right, transparent 50%, hsl(250, 24%, 9%) 50%);
+    height: 10vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 550px) {
+    .topic-container{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .icon-list{
+        flex-direction: row;
+        height: 100%;
+        margin: 0px;
+        flex-wrap: wrap;
+    }
+    .icon-list li{
+        list-style: none;
+        margin: 0px;
+
+    }
+    .nav-title{
+        font-size: 30px;
+    }
+
+    .nav-main{display: none;}
+   
+
+}

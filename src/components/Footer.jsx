@@ -4,6 +4,7 @@ import emailIcon from "../assets/icon_email.svg";
 import resumeIcon from "../assets/icon_resume.svg";
 import linkedinIcon from "../assets/icon_linkedin.svg";
 import resume from "../assets/resume.pdf";
+import Legacy from "./Legacy";
 
 export default function Footer() {
   return (
@@ -64,6 +65,8 @@ export default function Footer() {
           </a>
           . All Rights Reserved.
         </span>
+        <Legacy />
+        {/* <p className="flex items-end align-middle justify-end">test</p> */}
       </div>
     </footer>
   );

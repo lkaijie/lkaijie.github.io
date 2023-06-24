@@ -8,6 +8,7 @@ import Skills from "./components/Skills_Section/Skills";
 import Contact from "./components/Contact";
 import project_json from "./components/projects.json";
 import Footer from "./components/Footer";
+import Legacy from "./components/Legacy";
 // import project_json from "./components/projects.json" assert { type: "json" };
 // import project_json from "./components/projects.json" assert { type: "json" };
 
@@ -45,7 +46,9 @@ function App() {
 
       <Projects projects={projects} />
       <Skills />
+
       <Contact />
+      {/* <Legacy /> */}
       <Footer />
     </>
   );

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- change title -->
+    <title>Kai Jie | QRHunter</title>
+    <link rel="stylesheet" href="project_style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous" defer="defer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+    <main>
+        <header class = "head">
+            <div class="nav-main">
+                <a href="/index.html#projects-div" style="text-decoration: none;" class="no-underline">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                </a>
+                <h1 class="nav-title">QRHunter</h1>
+                <i class="fa fa-arrow-right" aria-hidden="true" id="test"></i>
+            </div>
+        </header>
+        <section>
+            <div class="topic-container">
+                <div class="img-container">
+                    <img src="/src/img/QRhunter.png" alt="QRHunter" class="topic-image">
+                </div>
+                <ul class="icon-list">
+                    <li>
+                        <a href="" class="icon-link">
+                            <div class="img-wrapper" id="vsicon">
+                                <div class="icon-container">
+                                    <span class="tooltiptext">Preview</span>
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+                                </div>
+                            </div>
+                        </a>
+                    </li>                    
+                    <li>
+                        <!-- TODO: change to fontawesome so color can change on highlight, think if want to change color or increase size? -->
+                        <a href="https://github.com/CMPUT301W23T14/QRHunter-App" class="icon-link">
+                            <div class="img-wrapper">
+                                <div class="icon-container">
+                                    <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" id="inver"/> -->
+                                    <span class="tooltiptext">Repository</span>
+                                    <i class="fa-brands fa-github"></i>
+                                    <i class="fa-solid fa-arrow-up-right-from-square link-icon" id="hlink"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="icon-link">
+                            <div class="img-wrapper">
+                                <div class="icon-container">
+                                    <span class="tooltiptext">Demo</span>
+                                    <i class="fa fa-youtube-play" style="color:#FF0000" id="youtube-icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <iframe src="https://github1s.com/CMPUT301W23T14/QRHunter-App" frameborder="0" class="iframe hidden" id="github1s"></iframe>
+        <!-- <iframe src="https://github.com/CMPUT301W23T14/QRHunter-App" frameborder="0" class="iframe hidden" id="github"></iframe> -->
+        <!-- <iframe src="https://www.youtube.com/watch?v=A48bcNyi1VM" frameborder="0" class="iframe hidden" id="youtube"></iframe> -->
+        <section>
+            <div class="description-container">
+                <h1 class="topic-title">About</h1>
+                <hr class="dashed">
+                <p class="description">
+                    QRHunter is an android app for a Pokemon-Go-like game. This app was developed as a group project for CMPUT 301 and it is also my first project involving many people (6!). 
+                    This is a very memorable project for me as this is where I first got into using github and version control. 
+                    I also learned a lot about the importance of communication and teamwork. 
+                    This was a genuinely fun project to work on and I am very proud of the end result, 
+                    I got to learn how to implement an android app from scratch following the official android architecture guidelines. 
+                    The main things I learnt from this were working as a team using Github, Test-Driven-Development, Database integration and of course Android development.
+                </p>
+                <br>
+                <hr class="dashed">
+                <h1 class="topic-title">Features</h1>
+                <p class="description">
+                    The main functionality of this application is to allow users to scan QR codes for points, earning their spot on the prestigious leaderboard.
+                    <div class="features">
+                        <br>
+                        <h3>
+                            Main features
+                        </h3>
+                        <ul style="list-style-position: inside;">
+                            <li>Scan QR or Bar codes to optain points and earn a visual representation of your scanned QRcode</li>
+                            <li>Leaderboard: Display or search for players, the top 3 in the leaderboards earn a special badge</li>
+                            <li>Profile: Check your scanned QR codes for their score rankings or your leaderboard position, you can also add comments to QRcodes that you have scanned</li>
+                            <li>Map: Uses the google maps API to display any nearby scanned codes</li>
+                        </ul>
+                    </div>
+                </p>
+                <br>
+                <h1 class="topic-title">Technologies</h1>
+                <hr class="dashed">
+                <div class="features">
+                    <ul style="list-style-position: inside;">
+                        <li>Java</li>
+                        <li>Android Studio</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>    
+        </section>
+    </main>
+
+</body>
+</html>
