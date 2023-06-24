@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills_Section/Skills";
 import Contact from "./components/Contact";
 import project_json from "./components/projects.json";
+import Footer from "./components/Footer";
 // import project_json from "./components/projects.json" assert { type: "json" };
 // import project_json from "./components/projects.json" assert { type: "json" };
 
@@ -28,8 +29,8 @@ function App() {
           // console.log(data);
           // setProjects(JSON.parse(projects));
           setProjects(data);
-          console.log(data);
-          console.log(typeof projects);
+          // console.log(data);
+          // console.log(typeof projects);
         });
     } catch (error) {
       console.log(error);
@@ -45,6 +46,7 @@ function App() {
       <Projects projects={projects} />
       <Skills />
       <Contact />
+      <Footer />
     </>
   );
 }

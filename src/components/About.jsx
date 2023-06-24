@@ -8,7 +8,7 @@ import resume from "../assets/resume.pdf";
 export default function About() {
   return (
     <>
-      <div className="about-container flex flex-col py-3 h-[90vh]">
+      <div className="about-container flex flex-col py-3 h-[90%]" id="About">
         <div className="about-content flex flex-col md:flex-row justify-center items-center my-16">
           <div className="about-intro w-2/4 flex flex-col mr-5">
             <h1 className="font-SF-Pro-Bold text-3xl mb-5">

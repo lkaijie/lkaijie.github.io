@@ -6,7 +6,7 @@ export default function Skill_item({ skill_icon, skill_language }) {
   const handleClick = () => {
     // console.log("clicked");
     console.log("clicked:  " + skill_language);
-    setClicked(!clicked);
+    // setClicked(!clicked);
   };
 
   return (
