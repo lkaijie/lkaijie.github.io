@@ -1,0 +1,11 @@
+<svg id="email" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <path id="Path_5689" data-name="Path 5689" d="M512,512H0V198.953L256,29,512,198.953Zm0,0" fill="#388cb3"/>
+  <path id="Path_5690" data-name="Path 5690" d="M512,198.953,256,29V512H512Zm0,0" fill="#265d77"/>
+  <path id="Path_5691" data-name="Path 5691" d="M416,414H96V0H331a85.1,85.1,0,0,1,85,85Zm0,0" fill="#ffcd82"/>
+  <path id="Path_5692" data-name="Path 5692" d="M416,85A85.1,85.1,0,0,0,331,0H256V414H416Zm0,0" fill="#ffe3ba"/>
+  <path id="Path_5693" data-name="Path 5693" d="M512,512H0V209.035L256,379,512,209.035Zm0,0" fill="#b7e4f8"/>
+  <path id="Path_5694" data-name="Path 5694" d="M512,209.035,256,379V512H512Zm0,0" fill="#6fc8f1"/>
+  <path id="Path_5695" data-name="Path 5695" d="M512,512H0V468.953L231.109,315.52a44.907,44.907,0,0,1,49.781,0L512,468.953Zm0,0" fill="#6fc8f1"/>
+  <path id="Path_5696" data-name="Path 5696" d="M512,468.953,280.891,315.52A44.949,44.949,0,0,0,256,307.992V512H512Zm0,0" fill="#4bbaed"/>
+  <path id="Path_5697" data-name="Path 5697" d="M416,90H328V0h3a85.1,85.1,0,0,1,85,85Zm0,0" fill="#ffcd82"/>
+</svg>

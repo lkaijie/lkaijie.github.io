@@ -1,0 +1,83 @@
+[
+  
+    {
+        "name":"QRHunter",
+        "description":"QRHunter is a QR code scanner that allows you to scan QR codes and save them to your phone.",
+        "url":"",
+        "technology":["Android", "Java", "ZXing", "SQLite", "JSON", "Glide", "Material Design"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/QRHunter-App",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=QRHunter-App",
+        "youtube_demo":"",
+        "body":[{}]
+    },
+
+
+    {
+        "name":"Scrape to notion",
+        "description":"Scrap to noation auto scrapes websites and uploads to notion .",
+        "url":"",
+        "technology":["Python", "Notion API", "Beautiful Soup", "Requests", "Pandas", "JSON"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/Scrap_to_Notion",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=Scrap_to_Notion",
+        "youtube_demo":"",
+        "body":[{}]
+    },
+    {
+        "name":"Personal WEbsiter",
+        "description":"Scrap to noation auto scrapes websites and uploads to notion .",
+        "url":"",
+        "technology":["Python", "Notion API", "Beautiful Soup", "Requests", "Pandas", "JSON"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/lkaijie.github.io",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=lkaijie.github.io",
+        "youtube_demo":"",
+        "body":[{}]
+    },
+    {
+        "name":"Artist update bot",
+        "description":"Scrap to noation auto scrapes websites and uploads to notion .",
+        "url":"",
+        "technology":["Python", "Notion API", "Beautiful Soup", "Requests", "Pandas", "JSON"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/ArtistUpdates-bot",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=ArtistUpdates-bot",
+        "youtube_demo":"",
+        "body":[{}]
+    },
+    {
+        "name":"Translator",
+        "description":"Scrap to noation auto scrapes websites and uploads to notion .",
+        "url":"",
+        "technology":["Python", "Notion API", "Beautiful Soup", "Requests", "Pandas", "JSON"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/quick-translate",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=quick-translate",
+        "youtube_demo":"",
+        "body":[{}]
+    },
+    {
+        "name":"HSR wiki",
+        "description":"Scrap to noation auto scrapes websites and uploads to notion .",
+        "url":"",
+        "technology":["Python", "Notion API", "Beautiful Soup", "Requests", "Pandas", "JSON"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/HSR-wiki",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=HSR-wiki",
+        "youtube_demo":"",
+        "body":[{}]
+    },
+    {
+        "name":"RONALD bot",
+        "description":"Scrap to noation auto scrapes websites and uploads to notion .",
+        "url":"",
+        "technology":["Python", "Notion API", "Beautiful Soup", "Requests", "Pandas", "JSON"],
+        "image":"/src/assets/projects/QRhunter.png",
+        "github":"https://github.com/lkaijie/ronaldbot",
+        "github_stats":"https://github-readme-stats.vercel.app/api/pin/?username=lkaijie&repo=ronaldbot",
+        "youtube_demo":"",
+        "body":[{}]
+    }
+    
+]
