@@ -39,7 +39,7 @@ function App() {
   }, []);
   return (
     <>
-      <div className="about-container h-screen w-[70%] flex flex-col justify-center mx-auto mb-10">
+      <div className="about-container h-screen sm:w-[70%] w-[100%] flex flex-col justify-center mx-auto mb-10">
         <Navbar />
         <About />
       </div>

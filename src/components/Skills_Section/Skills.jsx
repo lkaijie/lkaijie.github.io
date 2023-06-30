@@ -3,7 +3,7 @@ import Skill_item from "./Skill_item";
 export default function Skills() {
   return (
     <>
-      <div className="my-20">
+      <div className="my-20 hidden sm:block">
         <h1
           className="flex justify-center align-middle items-center font-SF-Pro-Bold text-2xl"
           id="Skills"
@@ -11,7 +11,7 @@ export default function Skills() {
           Skills
         </h1>
         <div className="skills-container flex flex-col justify-center items-center mx-auto my-10 bg-gray-100 rounded-lg p-2 shadow-lg max-w-2xl">
-          <div className="skill-type flex mx-5 my-5">
+          <div className="skill-type flex sm:mx-5 sm:my-5">
             <h3 className="skill-type-name font-Space-Grotesk-VariableFont_wght">
               Front-End:{" "}
             </h3>

@@ -10,7 +10,7 @@ export default function About() {
     <>
       <div className="about-container flex flex-col py-3 h-[90%]" id="About">
         <div className="about-content flex flex-col md:flex-row justify-center items-center my-16">
-          <div className="about-intro w-2/4 flex flex-col mr-5">
+          <div className="about-intro w-4/5 sm:w-2/4 flex flex-col sm:mr-5">
             <h1 className="font-SF-Pro-Bold text-3xl mb-5">
               <span className="wave mr-2 delay-500 motion-reduce:animate-none">
                 👋
@@ -29,7 +29,7 @@ export default function About() {
                 that loves automation!
               </p>
             </div>
-            <div className="links my-6 bg-gray-100 rounded-lg p-2 shadow-lg w-44 h-[3.3rem]">
+            <div className="links my-6 bg-gray-100 rounded-lg p-2 shadow-lg sm:w-44 h-[3.3rem]">
               <ul className="flex flex-row justify-between align-middle">
                 <li className="links w-[25%]">
                   <a href="https://github.com/lkaijie" target="_blank">
@@ -72,7 +72,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="about-img w-2/4 ml-5">
+          <div className="about-img sm:w-2/4 sm:ml-5">
             {/* <img src={about_img} alt="profile" /> */}
             <img src={about_img} alt="profile" />
             {/* both work */}

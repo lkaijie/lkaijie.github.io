@@ -27,7 +27,7 @@ export default function Projects({ projects }) {
     // </>
 
     <>
-      <div className="mt-[-200px]">
+      <div className="mt-[100px] sm:mt-[-200px]">
         <h1
           className="flex justify-center align-middle items-center font-SF-Pro-Bold text-2xl mx-10"
           id="projects"
@@ -35,7 +35,7 @@ export default function Projects({ projects }) {
           Projects
         </h1>
         <div className="project-container" id="projects">
-          <div className="project-list flex flex-row mx-10 my-10 flex-wrap justify-center items-center align-middle">
+          <div className="project-list flex flex-row sm:mx-10 sm:my-10 flex-wrap justify-center items-center align-middle">
             {projects.map((project) => {
               // console.log(project);
               // return <ProjectItem key={project["name"]} project={project} />;

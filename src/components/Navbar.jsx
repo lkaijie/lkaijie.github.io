@@ -5,7 +5,7 @@ import resume from "../assets/resume.pdf";
 export default function Navbar() {
   return (
     <>
-      <div className="nav-bar flex flex-col py-3 h-[10%]">
+      <div className="nav-bar flex flex-col py-3 h-[10%] sm:mx-0 mx-10">
         <div className="nav-container flex flex-row justify-between my-2 text-xs">
           <div className="nav-content text-xl">
             <span className="font-bold hidden md:flex" id="full-name">
