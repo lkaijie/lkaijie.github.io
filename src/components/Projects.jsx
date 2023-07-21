@@ -35,12 +35,13 @@ export default function Projects({ projects }) {
           Projects
         </h1>
         <div className="project-container" id="projects">
-          <div className="project-list flex flex-row sm:mx-10 sm:my-10 flex-wrap justify-center items-center align-middle">
+          <div className="project-list flex flex-row sm:mx-10 sm:my-10 flex-wrap justify-center items-start align-middle">
             {projects.map((project) => {
               // console.log(project);
               // return <ProjectItem key={project["name"]} project={project} />;
               return (
-                <ProjectItemTemp key={project["name"]} project={project} />
+                // <ProjectItemTemp key={project["name"]} project={project} />
+                <ProjectItem key={project["name"]} project={project} />
               );
             })}
           </div>

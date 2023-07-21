@@ -21,16 +21,16 @@ function App() {
   useEffect(() => {
     try {
       // fetch("src/components/projects.json")
-      fetch(
-        "https://raw.githubusercontent.com/lkaijie/lkaijie.github.io/sitev3_test/src/components/projects.json"
-      )
-        // fetch({ project_json })
+      // fetch(
+      //   "https://raw.githubusercontent.com/lkaijie/lkaijie.github.io/sitev3_test/src/components/projects.json"
+      // )
+      fetch("/projects.json")
         .then((res) => res.json())
         .then((data) => {
           // console.log(data);
           // setProjects(JSON.parse(projects));
           setProjects(data);
-          // console.log(data);
+          console.log(data);
           // console.log(typeof projects);
         });
     } catch (error) {
@@ -44,6 +44,7 @@ function App() {
         <About />
       </div>
 
+      {/* <Projects projects={project_json} /> */}
       <Projects projects={projects} />
       <Skills />
 
