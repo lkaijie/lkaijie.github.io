@@ -10,7 +10,7 @@ export default function Skills() {
         >
           Skills
         </h1>
-        <div className="skills-container flex flex-col justify-center items-center mx-auto my-10 bg-gray-100 rounded-lg p-2 shadow-lg max-w-2xl">
+        <div className="skills-container flex flex-col justify-center items-center md:items-start mx-auto my-10 bg-gray-100 rounded-lg p-2 shadow-lg max-w-2xl">
           <div className="skill-type flex sm:mx-5 sm:my-5">
             <h3 className="skill-type-name font-Space-Grotesk-VariableFont_wght">
               Front-End:{" "}
