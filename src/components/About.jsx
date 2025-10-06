@@ -77,7 +77,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="about-img sm:w-2/4 sm:ml-5">
+          <div className="about-img hidden sm:w-2/4 sm:ml-5">
             {/* <img src={about_img} alt="profile" /> */}
             <img src={about_img} alt="profile" />
             {/* both work */}
