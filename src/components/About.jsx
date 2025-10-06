@@ -19,20 +19,24 @@ export default function About() {
             </h1>
             <div>
               <p className="font-SF-Pro-Light text-gray-500">
-                My name is <span className="text-important">Kai Jie</span>. I am
-                a 4th year{" "}
+                My name is <span className="text-important">Kai</span>. I am a
+                Final year{" "}
                 <span className="text-important">Computer Science</span> Student
                 at the University of Alberta. I am a{" "}
                 <span className="text-important">
-                  Full-Stack Software Developer{" "}
-                </span>
-                that loves automation!
+                  Junior Data/Software Engineer
+                </span>{" "}
+                that enjoys building and automating software.
               </p>
             </div>
             <div className="links my-6 bg-gray-100 rounded-lg p-2 shadow-lg sm:w-44 h-[3.3rem]">
               <ul className="flex flex-row justify-between align-middle">
                 <li className="links w-[25%]">
-                  <a href="https://github.com/lkaijie" target="_blank">
+                  <a
+                    href="https://github.com/lkaijie"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <img
                       src={githubIcon}
                       className="icon-link"
@@ -50,6 +54,7 @@ export default function About() {
                   <a
                     href="https://www.linkedin.com/in/lkaijie/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <img
                       src={linkedinIcon}
@@ -72,7 +77,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="about-img sm:w-2/4 sm:ml-5">
+          <div className="about-img hidden sm:w-2/4 sm:ml-5">
             {/* <img src={about_img} alt="profile" /> */}
             <img src={about_img} alt="profile" />
             {/* both work */}
