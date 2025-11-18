@@ -23,7 +23,6 @@
           <RouterLink to="/" class="nav-link">About Me</RouterLink>
         </li>
         <li class="nav-item">
-          <!-- <RouterLink to="/" class="nav-link">About Me</RouterLink> -->
           <button @click="toggleDarkMode">Toggle Dark</button>
         </li>
       </ul>
@@ -40,11 +39,16 @@ defineProps<{
 </script>
 
 <style lang="scss" scoped>
-// @use '';
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: min(4vh, 10px) min(4vw, 24px); // responsive padding: 4% of viewport or max 24px
+  // margin: 0 min(4vw, 24px);
 
-// .header {
-// }
-
+  z-index: 100;
+  width: 100%;
+  background-color: var(--card);
+}
 .navbar-container {
   @include flex-general;
   justify-content: space-between;
@@ -59,55 +63,4 @@ defineProps<{
     }
   }
 }
-
-// .navbar {
-//   @include flex-general;
-//   height: var(--nav-height);
-//   background-color: var(--card);
-//   border-bottom: 1px solid rgba(var(--text), 0.1);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 0 2rem;
-//   position: fixed;
-//   top: 0px;
-// }
-
-// .navbar-container {
-//   width: 100%;
-//   max-width: 1200px; // Or your preferred max-width
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// .navbar-brand {
-//   font-size: 1.5rem;
-//   font-weight: bold;
-//   color: var(--text);
-// }
-
-// .navbar-nav {
-//   display: flex;
-//   list-style: none;
-//   gap: 1.5rem;
-// }
-
-// .nav-link {
-//   color: var(--text);
-//   font-weight: 500;
-//   opacity: 0.8;
-//   transition: opacity 0.2s ease;
-
-//   &:hover {
-//     opacity: 1;
-//   }
-
-//   // This class is automatically added by Vue Router
-//   &.router-link-exact-active {
-//     opacity: 1;
-//     font-weight: 700;
-//     // You could add a color here, e.g., your primary brand color
-//   }
-// }
 </style>

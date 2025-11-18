@@ -37,6 +37,16 @@ watch(isDark, (value) => {
   --bg: #ffffff;
   --text: #111111;
   --card: #f4f4f4;
+  // box-sizing: border-box;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .dark {
